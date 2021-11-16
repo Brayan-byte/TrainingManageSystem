@@ -1,39 +1,30 @@
-.login-container {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  
-  .users-figure {
-    height: 32px;
-  }
-  .login-form {
-    padding: 5%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
-  }
-  .login-form h3 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .login-container form {
-    padding: 10%;
-  }
-  .btnSubmit {
-    width: 48%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    border: none;
-    cursor: pointer;
-  }
-  .login-form .btnSubmit {
-    font-weight: 600;
-    color: #fff;
-    background-color: #0062cc;
-  }
-  
-  .login-form .ForgetPwd {
-    color: #0062cc;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
+.title-form {
+  margin: 80px 0 20px 0;
+}
+
+.title-form h1{
+  padding: auto;
+  vertical-align: bottom;
+  font-size: x-large;
+  font-weight: bold;
+  display: inline;
+}
+.main {
+  margin-bottom: 50px;
+}
+.icon-input{
+  position: relative;
+}
+.icon-input i{
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  color: gray;
+}
+.padding-inputs{
+  padding-left: 38px;
+}
+
+.redondeo{
+  border-radius: 15px;
+}

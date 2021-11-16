@@ -4,115 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Bootstrap CSS -->
-
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="login.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <script
-    src="https://code.jquery.com/jquery-1.10.2.js">
-  </script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+   
   <title>Login Page</title>
 </head>
 
 <body>
-
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary opacity-90 ps-2 pe-5 py-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light opacity-90 ps-2 pe-5 py-0">
         <div class="container-fluid px-5 py-0">
-            <a class="navbar-brand" href="#">
-                <img src="atos-white-logo.png" alt="atos white logo" height="65">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
-                    <li class="nav-item">
-                        <a class="nav-link activ ms-3 me-5" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Menu
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">New Training Request</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Training Request Status</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">View All Trainings</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Trainings Status</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <button type="button" class="btn btn-primary">
-                    <img src="plus-solid.svg" alt="plus-solid" width="13" class="mb-1 me-1 filter-white" width="13">
-                    New Request</button>
-                <div class="dropdown bg-white rounded-circle p-2 ms-4 me-5">
-                    <a class="dropdown-toggle dropdown-noicon" href="#" id="userDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="user-solid.svg" class="opacity-50" alt="user solid icon" width="27" height="27">
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
-                    </ul>
-                </div>
-            </div>
+          <a class="navbar-brand" href="#">
+            <img src="atos-blue-logo.jfif" alt="atos white logo" height="30">
+          </a>
         </div>
-    </nav>
+      </nav>
 </header>
 
-  <div class="d-flex justify-content-center login-form">
-    <form action="/register.html" method="get">
-      <div class="form-group container">
-        <div class="row">
-          <img class="users-figure pr-2" src="user-solid.svg" />
-          <h3>Login in</h3>
-        </div>
-      </div>
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Your Email *" value="" />
-      </div>
-      <div class="form-group">
-        <input type="password" class="form-control" placeholder="Your Password *" value="" />
-      </div>
-
-      <div class="form-group">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <input type="submit" class="btnSubmit justify-content-start" value="Login" />
-
-              <input type="submit" class="btnSubmit justify-content-end" value="SignUp" />
+<main class="container main">
+  <div style="margin-top: 7rem;">
+    <form>
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <div style="margin-top: 7rem;">
+            <div class="col-7 title-form text-secondary">
+              <img src="user-solid.svg" width="30" height="30" class="opacity-50" alt="user icon"/>
+              <h1>Sign in</h1>
             </div>
+
+
+
+          <div class="form-group">
+            <label for="user_email" class="form-label">User email</label>
+            <div class="icon-input">
+              <input type="email" required placeholder="Enter email" id="user_email" class="form-control padding-inputs redondeo"/>
+              <i class="fas fa-envelope"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="user_password" class="form-label">User password</label>
+            <div class="icon-input">
+              <input type="password" required placeholder="Enter password" id="user_password" class="form-control padding-inputs redondeo"/>
+              <i class="fas fa-lock"></i>
+            </div>
+          </div>
+          <br/>
+          <div style="text-align: center;">
+            <div class="d-inline p-2">Don't have an acount?</div>
+            <div class="d-inline p-2 text-primary" ><a href="">Sign in</a></div>
+          </div>
+          <br/>
+          <div class="col text-center">
+            <button class="btn btn-primary btn-labeled redondeo">
+                Sign up
+              </button>
+          </div>
+          </div>
+        </div>
+        <div class="col-4">
+            
+          <figure class="figure">
+            <img src="imgsignin.png" style="width: 90rem;" class="figure-img img-fluid rounded" alt="...">
+        
+          </figure>
+
+
+
+
           </div>
         </div>
       </div>
-      <div class="form-group">
-        <a href="#" class="ForgetPwd">Forget Password?</a>
-      </div>
     </form>
-
   </div>
+  </main>
 
-  <div id="footer"></div>
-  <footer class="bg-light w-100 mt-auto mx-0">
+<footer class="bg-light w-100 mt-auto mx-0">
     <div class="container">
         <div class="row my-5">
             <div class="col-5">
@@ -142,15 +116,6 @@
         </div>
     </div>
 </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
 
 </body>
 </html>
